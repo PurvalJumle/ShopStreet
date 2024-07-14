@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopStreet</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" style="color:Black;font-size:25px;top:5px;">ShopStreet</a>
+            <a href="index.html" style="padding-top:7px">Home</a>
+            <a href="shop.html" style="padding-top:7px">Shop</a>
+            <a href="about.html" style="padding-top:7px">About</a>
+            <a href="contact.html" style="padding-top:7px">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero" style="background-image: url('https://www.prym-fashion.com/fileadmin/prym-fashion.com/Bilder/Header-Images/menwomen_2_1920x1920.jpg'); background-size: cover; background-position:top; text-align: center; padding: 100px 200px ; color: white;">
+            <br></b><h1 style="padding:40px;color:rgb(46, 20, 13)"><b>Great Fashion 2022</b></h1>
+            <a href="shop.html" class="btn"  >Shop Now</a>
+            
+            
+
+        </section>
+        
+        <section class="categories">
+            <div class="category"><a href="for-her.html">For Her</a></div>
+            <div class="category">Accessories</div>
+            <div class="category">For Him</div>
+        </section>
+        
+        <section class="products">
+            <div class="product" onclick="showPumaModal()">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386269/01/sv01/fnd/IND/fmt/png/All-Day-Active-Unisex-Sneakers" alt="Product Image">
+                <h3>Puma Shoes (Black)</h3>
+                <p style="font-size: 20px;">₹1250</p>
+            </div>
+            <div class="product" onclick="harryPotterModal('Product Name 2', 'https://images-na.ssl-images-amazon.com/images/I/71Ui-NwYUmL.jpg', 'Product Description 2', 'Price 2')">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71Ui-NwYUmL.jpg" style="height:325px;" alt="Product Image">
+                <h3>Harry Potter and the deathly hollows books</h3>
+                <p>₹850</p>
+            </div>
+            <div class="product" onclick="openModal('Modern SOFA (TimberLand)', 'https://tse2.mm.bing.net/th?id=OIP.JJhzfT3VWbT8hAw3IndesAHaHa&pid=Api&P=0&h=180', 'The Elegance Sofa combines modern design with luxurious comfort, making it the perfect addition to any living space. Crafted with a sturdy hardwood frame and upholstered in premium, stain-resistant fabric, this sofa offers both durability and style. Its plush, high-density foam cushions provide exceptional support, while the sleek, low-profile silhouette adds a touch of contemporary elegance. With its generous seating space and timeless appeal, the Elegance Sofa effortlessly enhances the ambiance of any room. Available in a variety of colors to suit your decor, it’s an ideal choice for both relaxation and entertaining. Upgrade your home with the Elegance Sofa and experience unparalleled comfort and sophistication.', '₹50,000')">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.JJhzfT3VWbT8hAw3IndesAHaHa&pid=Api&P=0&h=180"style="height:325px" alt="Product Image">
+                <h3> Modern SOFA (TimberLand) </h3>
+                <p>₹50,000</p>
+            </div>
+            <div class="product" onclick="openModal('Formal Pant Women (Navy Blue) by Pyra', 'https://up.yimg.com/ib/th?id=OIP.hwV0H2UqiEK3bCJRJaNM8QHaMD&pid=Api&rs=1&c=1&qlt=95&w=65&h=107', 'The Navy Blue Formal Pant for Women offers a perfect blend of elegance and professionalism. Tailored from high-quality, breathable fabric, these pants ensure comfort throughout the day while maintaining a polished appearance. The classic navy blue color adds a versatile touch to your wardrobe, easily pairing with a variety of tops and blazers. Featuring a mid-rise waist and a straight-leg fit, these pants flatter all body types and provide a streamlined silhouette. The impeccable stitching and attention to detail reflect a commitment to quality and style. Ideal for both office wear and formal occasions, the Navy Blue Formal Pant is a timeless addition to your collection, embodying sophistication and grace.', '₹1000')">
+                <img src="https://up.yimg.com/ib/th?id=OIP.hwV0H2UqiEK3bCJRJaNM8QHaMD&pid=Api&rs=1&c=1&qlt=95&w=65&h=107"style="height:325px" alt="Product Image">
+                <h3>Formal Pant Women (Navy Blue) by Pyra</h3>
+                <p>₹1000</p>
+            </div>
+            
+        </section>
+    </main>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h2 id="modalTitle">Product Title</h2>
+            <p id="modalDescription">Product Description</p>
+            <p id="modalPrice">Price</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Purval Jumle - ShopStreet</p>
+    </footer>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

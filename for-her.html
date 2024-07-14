@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopStreet - For Her</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="C:\Users\jumle\OneDrive\Desktop\ECOMMERCE\scripts\scripts."></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" style="color:Black;font-size:25px;top:5px;">ShopStreet</a>
+            <a href="index.html" style="padding-top:7px">Home</a>
+            <a href="shop.html" style="padding-top:7px">Shop</a>
+            <a href="about.html" style="padding-top:7px">About</a>
+            <a href="contact.html" style="padding-top:7px">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero" style="background-image: url('https://wallpapercrafter.com/desktop3/992729-fashion-jeans-denim-female-woman-pose-posing.jpg'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <p style="font-size:2rem"><b>Discover Your Style</b></p>
+                <p style="font-size:1.5rem"><b>Explore the latest trends in women's fashion</b></p><br><br>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+        
+        <center><h1 style="margin:10px";>Queen For You</h1></center>
+        <section class="circular-categories">
+            <div class="category">
+                <a href="dresses.html"><img style="background-image:cover;height:140px;width:140px;" src="https://tse2.mm.bing.net/th?id=OIP.tbOaO4B4fPJmpKj889x6LAHaHa&pid=Api&P=0&h=180" alt="dresses"></a>
+                <div class="overlay-text">Dresses</div>
+            </div>
+        
+            
+            <div class="category">
+                <img style="height: 140px;width: 140px;" src="https://media.allure.com/photos/5a1359b05a661941e3b80a96/1:1/w_1600/bhcosmetics.jpg" alt="Makeup">
+                <div class="overlay-text">Beauty</div>
+            </div>
+            <div class="category">
+                <img style="height: 140px;width: 140px;" src="https://motivateall.weebly.com/uploads/2/3/2/8/23284116/1182424438-1_orig.jpg" alt="Watch">
+                <div class="overlay-text">Watches</div>
+            </div>
+            <div class="category">
+                <img style="height:140px;width:140px;" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386269/01/sv01/fnd/IND/fmt/png/All-Day-Active-Unisex-Sneakers" alt="shoes">
+                <div class="overlay-text">Shoes</div>
+            </div>
+            <div class="category">
+                <img style="height:140px;width:140px;" src="https://i0.wp.com/sportytell.com/wp-content/uploads/2020/09/812px-Serena_Williams_US_Open_2013.jpg?resize=680%2C703&ssl=1" alt="Sports">
+                <div class="overlay-text">Sports</div>
+            </div>
+          </section>  
+            
+            
+    </main>
+    <section class="products">
+        <div class="product" onclick="showPumaModal()">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/386269/01/sv01/fnd/IND/fmt/png/All-Day-Active-Unisex-Sneakers" alt="Product Image">
+            <h3>Puma Shoes (Black)</h3>
+            <p style="font-size: 20px;">₹1250</p>
+        </div>
+        <div class="product" onclick="openModal('Formal Pant Women (Navy Blue) by Pyra', 'https://up.yimg.com/ib/th?id=OIP.hwV0H2UqiEK3bCJRJaNM8QHaMD&pid=Api&rs=1&c=1&qlt=95&w=65&h=107', 'The Navy Blue Formal Pant for Women offers a perfect blend of elegance and professionalism. Tailored from high-quality, breathable fabric, these pants ensure comfort throughout the day while maintaining a polished appearance. The classic navy blue color adds a versatile touch to your wardrobe, easily pairing with a variety of tops and blazers. Featuring a mid-rise waist and a straight-leg fit, these pants flatter all body types and provide a streamlined silhouette. The impeccable stitching and attention to detail reflect a commitment to quality and style. Ideal for both office wear and formal occasions, the Navy Blue Formal Pant is a timeless addition to your collection, embodying sophistication and grace.', '₹1000')">
+            <img src="https://up.yimg.com/ib/th?id=OIP.hwV0H2UqiEK3bCJRJaNM8QHaMD&pid=Api&rs=1&c=1&qlt=95&w=65&h=107"style="height:325px" alt="Product Image">
+            <h3>Formal Pant Women (Navy Blue) by Pyra</h3>
+            <p>₹1000</p>
+        </div>
+        <div class="product" onclick="openModal('Pink Cap', 'https://tse2.mm.bing.net/th?id=OIP.s_7yU-zK1GQ5xwRNF5XkVwHaHa&pid=Api&P=0&h=180', 'Add a splash of vibrant color to her wardrobe with our Pink Paradise Cap! Crafted from soft, breathable cotton, this cap features a classic six-panel design with a curved brim to shield her eyes from the sun. The adjustable strap at the back ensures a comfortable fit for all-day wear.', '₹250')">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.s_7yU-zK1GQ5xwRNF5XkVwHaHa&pid=Api&P=0&h=180"style="height:325px" alt="Product Image">
+            <h3>Pink Cap</h3>
+            <p>₹250</p>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product" onclick="openModal('Cup for Tea & Coffee', 'https://i.pinimg.com/originals/d3/1f/76/d31f7621cdab8642f7a14a04d4d2f0f0.jpg', 'Introducing our sleek 12oz stainless steel cup, designed for both practicality and style. With its double-walled insulation, it keeps beverages hot or cold for hours, perfect for morning coffee or an afternoon iced tea. ', '₹150')">
+            <img src="https://i.pinimg.com/originals/d3/1f/76/d31f7621cdab8642f7a14a04d4d2f0f0.jpg" alt="Product Image">
+            <h3>Cup for Tea & Coffee</h3>
+            <p style="font-size: 20px;">₹150</p>
+        </div>
+        
+        <div class="product" onclick="openModal('Belts for girls(Black & Brown)', 'https://m.media-amazon.com/images/I/61C9SC4EbfL._AC_UL1350_.jpg', 'Elevate your everyday look with our Classic Leather Belt, a timeless accessory crafted with impeccable quality and style. Made from genuine leather, this belt boasts durability and versatility, perfect for both casual and formal occasions.', '₹300')">
+            <img src="https://m.media-amazon.com/images/I/61C9SC4EbfL._AC_UL1350_.jpg"style="height:325px" alt="Product Image">
+            <h3>Belts for girls(Black & Brown)</h3>
+            <p>₹300</p>
+        </div>
+        <div class="product" onclick="openModal('Be-You-tiful Wall Art', 'https://i.etsystatic.com/6564683/r/il/a71531/896122107/il_1588xN.896122107_g45a.jpg', 'Embrace the beauty of individuality with our Be-You-tiful Wall Art, a stunning reminder to celebrate authenticity and self-expression.', '₹500')">
+            <img src="https://i.etsystatic.com/6564683/r/il/a71531/896122107/il_1588xN.896122107_g45a.jpg"style="height:325px" alt="Product Image">
+                <h3>Be-You-tiful Wall Art</h3>
+                <p>₹500</p>
+        </div>
+    </section>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h2 id="modalTitle">Product Title</h2>
+            <p id="modalDescription">Product Description</p>
+            <p id="modalPrice">Price</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
